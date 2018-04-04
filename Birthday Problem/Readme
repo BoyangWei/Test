@@ -1,6 +1,6 @@
 This experiment aims to verify the Birthday Problem and the Coupon Collector's Problem. These are both relevant to
 understanding how a hash table, especially one using separate chaining, will behave. But scientists, including engineers, 
-shouldn't always just take things for granted. So, you will actually run experiments to validate the following two expressions:
+shouldn't always just take things for granted. So, I will actually run experiments to validate the following two expressions:
 C1(m) is close to √(π×m/2) and B0(m) is very close to m×lnm
   where
 m is the number of bins/slots; and
