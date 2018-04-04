@@ -1,4 +1,4 @@
-package Assignment3;
+
 
 import java.util.function.Function;
 
@@ -22,11 +22,11 @@ public class Benchmark<T> {
     private static Integer[] list;
 
     public static void main(String[] args) {
-        int m = 1010; // This is the number of repetitions: sufficient to give a good mean value of timing
+        int m = 1010; 
         Integer[] array = new Integer[1000];
-        for (int i = 0; i < 1000; i++) array[i] =1000-i; // TODO populate the array with real random data
+        for (int i = 0; i < 1000; i++) array[i] =1000-i; 
         int n = 999;
-        // TODO You need to apply doubling to n
+        
         benchmarkSort(array, n, "SelectionSort", new SelectionSort<>(), m);
         benchmarkSort(array, n, "InsertionSort", new InsertionSort<>(), m);
     }
