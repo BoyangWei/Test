@@ -1,0 +1,5 @@
+This file contains nothing but some code related to an important type of practical experiment as the "random walk".
+
+Imagine a drunken man who, starting out leaning against a lamp post in the middle of an open space, takes a series of steps of the same length l. The direction of these steps is randomly chosen from North, South, East or West. After n steps, how far (d), generally speaking, is the man from the lamp post? Note that d is the Euclidean distance of the man from the lamp-post.
+
+It turns out that there is a relationship between d, l and n which is typically applicable to many different types of stochastic (randomized) experiments. And these files aim to find such relationship.
