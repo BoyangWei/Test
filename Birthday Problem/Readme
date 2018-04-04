@@ -1,0 +1,8 @@
+This experiment aims to verify the Birthday Problem and the Coupon Collector's Problem. As you recall, these are both relevant to
+understanding how a hash table, especially one using separate chaining, will behave. But scientists, including engineers, 
+shouldn't always just take things for granted. So, you will actually run experiments to validate the following two expressions:
+C1(m) is close to √(π×m/2) and B0(m) is very close to m×lnm
+  where
+m is the number of bins/slots; and
+C1(m) is the (average) number of hashes/throws before the first collision in encountered; and
+B0(m) is the (average) number of hashes/throws before all bins/slots are filled (i.e. there are zero empty bins).
