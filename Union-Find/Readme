@@ -1,0 +1,2 @@
+This experiment aims to confirm the hypothesis that the number of pairs generated reduce the number of components from n to 1
+is ~ 1/2 n log n where log n is the natural logarithm of n.
