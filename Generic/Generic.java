@@ -1,7 +1,7 @@
 package Final;
 
 public class Generic implements Comparable{
-	//init state = 0; state=1 means that he knows that he needs a key. state=2 means he has the key. state = 3 means mission complete.state<0 means death. 
+	//init state = 0; state=1 means that he knows that he needs a key. state=2 means he has the key. state = 3 means mission complete. 
 	private Gene[] genearr;
 	private int dx;
 	private int dy;
@@ -9,8 +9,17 @@ public class Generic implements Comparable{
 	final double pro = 0.05;
 	private int score=0;
 	private int step=0;
+	private boolean alive =true;  
 	
 	
+	public boolean isAlive() {
+		return alive;
+	}
+
+	public void setAlive(boolean alive) {
+		this.alive = alive;
+	}
+
 	public int getStep() {
 		return step;
 	}
@@ -103,18 +112,18 @@ public class Generic implements Comparable{
 	}
 	
 	public void Move() {
-		while(this.state>=0&&this.step<100) {
+		while(this.state>=0&&this.step<100&&this.isAlive()) {
 			switch(this.getGenearr()[step].getGene()) {
 			case 0: this.dy++; break;
 			case 1: this.dx--; break;
 			case 2: this.dy--;break;
 			case 3: this.dx++; break;
 			}
-			//call map to update state
+			//call map to update alive or state
 		 if(this.state==3) {
 				break;
 			}
-			step++;
+		 step++;
 		}
 		//call fitness function
 		
