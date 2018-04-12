@@ -81,6 +81,8 @@ public class Generic implements Comparable{
 			this.state=father.getState();
 		else
 			this.state=mother.getState();
+		if(this.state>1)
+			this.state=1;
 	}
 	
 	public void Mutate(Generic generic) {
@@ -112,6 +114,7 @@ public class Generic implements Comparable{
 		 if(this.state==3) {
 				break;
 			}
+			step++;
 		}
 		//call fitness function
 		
